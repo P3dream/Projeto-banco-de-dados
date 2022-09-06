@@ -52,6 +52,9 @@ create table orders(
     orderDescription varchar(255),
     sendValue float default 10,
     paymentCash boolean default false,
+    idpclient int,
+    idppayment int,
+    constraint fk_id_payment_client foreign key (idpclient) references payments (idclient),
     constraint fk_order_client foreign key (idOrderClient) references clients (idClient)
 		on update cascade
         on delete set null

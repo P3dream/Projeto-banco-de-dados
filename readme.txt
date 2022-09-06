@@ -1,0 +1,1 @@
+Nesse repositório, esta a modelagem do projeto de banco de dados, o seu script de criação, inserção e queries no contexto de um ecommerce.
